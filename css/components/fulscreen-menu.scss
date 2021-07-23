@@ -1,0 +1,41 @@
+.fulscreen-menu--active {
+    left: 0;
+    opacity: 1;
+}
+
+
+.fulscreen-menu {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #313131;
+    left: 100%;
+    z-index: 3;
+    transition: .3s;
+    
+    &.active {
+        left: 0;
+    }
+}
+
+.sub__menu {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+    width: rem(253px);
+    height: rem(510px);
+    margin: auto;
+    padding-top: rem(135px);
+
+}
+
+.menu__path {
+    font-size: rem(36px);
+    text-decoration: none;
+    line-height: rem(72px);
+    justify-content: center;
+}

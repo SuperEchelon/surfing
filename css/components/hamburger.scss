@@ -1,0 +1,54 @@
+.hamburger {
+    position: fixed;
+    right: 5%;
+    top: 20px;
+    width: 26px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 15;
+    transition: all 0.4s;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+    @include tablets {
+        display: inline-flex;
+    }
+}
+
+.hamburger__plank {
+    position: absolute;
+    width: 100%;
+    display: block;
+    background:#fff;
+    height: 5px;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+
+.hamburger__plank_first {
+    top: 0;
+}
+
+.hamburger__plank_second, .hamburger__plank_third {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger__plank_fourth {
+    bottom: 0;
+}
+
+.hamburger_active .hamburger__plank_first, .hamburger_active .hamburger__plank_fourth {
+    opacity: 0;
+}
+
+.hamburger_active .hamburger__plank_second {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.hamburger_active .hamburger__plank_third {
+    transform: translateY(-50%) rotate(-45deg);
+}

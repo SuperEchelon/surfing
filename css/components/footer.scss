@@ -1,0 +1,97 @@
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(18px);
+    
+    @include tablets {
+        align-items: flex-start;
+    }
+}
+
+.footer__col {
+    display: flex;
+    align-items: center;
+}
+
+.footer__col--align--right {
+    justify-content: flex-end;
+
+    @include tablets {
+        flex: none;
+    }
+}
+
+.contacts {
+    margin-right: rem(400px);
+
+    @include tablets {
+        flex: none;
+    }
+
+}
+
+.contacts__desc {
+    font-weight: 400;
+    font-size: 21px;
+    color: #292929;
+    display: flex;
+
+    @include phones {
+        padding: 0 0%;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+.footer__phone-number {
+    font-size: rem(21px);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #292929;
+}
+
+.phone-number__icon {
+    flex-shrink: 0;
+}
+
+.footer__phone-number__icon-elem {
+    width: rem(13px);
+    height: rem(14px);
+    margin-right: rem(6px);
+    color: #292929;
+}
+
+.phone-number__text {
+    white-space: nowrap;
+}
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: rem(14px);
+    cursor: pointer;
+}
+
+.socials__item {
+    text-decoration: none;
+    width: rem(20px);
+    height: rem(20px);
+    background-color: #B3B3B3;
+    padding: rem(14px);
+    background: center center no-repeat;
+    position: relative;
+}
+
+.socials__item--icon {
+    width: rem(20px);
+    height: rem(20px);
+}

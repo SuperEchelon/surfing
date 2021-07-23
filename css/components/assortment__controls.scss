@@ -1,0 +1,23 @@
+.container--center {
+    position: relative;
+}
+
+.assortment__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(13.5px);
+    height: rem(27px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.assortment__control--left {
+    left: -4%;
+}
+
+.assortment__control--right {
+    right: -4%;
+}

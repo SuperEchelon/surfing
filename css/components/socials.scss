@@ -1,0 +1,13 @@
+.socials__item--icon {
+    fill: #B3B3B3;
+
+    &:hover {
+        fill: #292929;
+    }
+}
+
+.socials__link {
+    &:hover .socials__item--icon {
+        fill: #292929;
+    }
+}

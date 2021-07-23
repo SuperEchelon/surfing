@@ -1,0 +1,7 @@
+.section__crew {
+    min-height: rem(548px);
+
+    @include tablets {
+        min-height: rem(774px);
+    }
+}

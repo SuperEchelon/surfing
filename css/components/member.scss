@@ -1,0 +1,14 @@
+.member {
+    text-align: center;
+}
+
+.members__avatar {
+    margin-bottom: rem(21px);
+    width: rem(220px);
+    height: rem(290px);
+
+    @include tablets {
+        width: rem(222px);
+        height: rem(290px);
+    }
+}

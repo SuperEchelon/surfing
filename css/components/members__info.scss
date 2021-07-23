@@ -1,0 +1,26 @@
+.members--version--desktop .members__info {
+    position: absolute;
+    top: 100%;
+}
+
+.members--version--desktop {
+    @include tablets {
+        display: none;
+    }
+}
+
+.members__info {
+    overflow: hidden;
+    transition: max-height .5s;
+    max-height: rem(0px);
+    text-align: -webkit-center;
+
+    &.active {
+        height: auto;
+    }
+}
+
+.members__info-block {
+    color: #292929;
+    padding-bottom: rem(5px);
+}

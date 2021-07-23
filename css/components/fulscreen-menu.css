@@ -1,0 +1,14 @@
+.fulscreen-menu {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: grey;
+  left: -10000px;
+  z-index: 3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.fulscreen-menu.active {
+  left: 0;
+}

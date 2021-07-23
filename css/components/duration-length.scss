@@ -1,0 +1,31 @@
+.duration-length {
+    width: 100%;
+    height: 4px;
+    border-radius: 1px;
+    background: linear-gradient(90deg, #fedb3f 0%, #fedb3f 0%, #626262 0%);
+    -webkit-appearance: none;
+    appearance: none;
+    outline: 0;
+}
+
+.duration-length::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background: #FEDB3F;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+}
+
+.duration-length::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #FEDB3F;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+}
